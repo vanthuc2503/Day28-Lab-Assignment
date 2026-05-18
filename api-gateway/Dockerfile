@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-RUN pip install fastapi uvicorn httpx prometheus-fastapi-instrumentator
+RUN pip install "fastapi>=0.100" uvicorn "httpx<0.28" prometheus-fastapi-instrumentator langsmith
 
 COPY main.py .
 

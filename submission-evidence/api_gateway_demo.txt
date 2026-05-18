@@ -1,0 +1,13 @@
+$ curl http://localhost:8000/health
+{"status":"ok","langsmith":true}
+
+$ curl -X POST http://localhost:8000/api/v1/chat \
+    -H 'Content-Type: application/json' \
+    -d '{"query":"What is platform engineering?","embedding":[0.1,0.2,0.3]}'
+
+{
+    "answer": "Platform engineering is the discipline of building self-service developer platforms that abstract infrastructure complexity. Based on the provided context, your query \u2014 'Context: []  Query: What is platform engineering?' \u2014 typically involves orchestrating CI/CD, observability, and data pipelines as a product.",
+    "latency_ms": 37.45,
+    "model": "Qwen/Qwen2.5-7B-Instruct-GPTQ-Int4",
+    "retrieved_docs": 0
+}

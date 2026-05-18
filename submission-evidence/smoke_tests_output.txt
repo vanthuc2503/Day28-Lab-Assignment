@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.15, pytest-7.4.3, pluggy-1.6.0 -- /Users/bean/Day28-Lab-Assignment/.venv/bin/python3.11
+cachedir: .pytest_cache
+rootdir: /Users/bean/Day28-Lab-Assignment
+plugins: anyio-3.7.1
+collecting ... collected 8 items
+
+smoke-tests/test_e2e.py::TestHappyPath::test_full_inference_returns_200 PASSED [ 12%]
+smoke-tests/test_e2e.py::TestHappyPath::test_health_check_passes PASSED  [ 25%]
+smoke-tests/test_e2e.py::TestDataIngestion::test_kafka_ingest_and_qdrant_store PASSED [ 37%]
+smoke-tests/test_e2e.py::TestObservability::test_prometheus_scrapes_api_gateway PASSED [ 50%]
+smoke-tests/test_e2e.py::TestObservability::test_grafana_dashboard_accessible PASSED [ 62%]
+smoke-tests/test_e2e.py::TestFailurePath::test_invalid_request_returns_422 PASSED [ 75%]
+smoke-tests/test_e2e.py::TestFailurePath::test_timeout_handled_gracefully PASSED [ 87%]
+smoke-tests/test_e2e.py::TestFeatureStore::test_feast_redis_has_features PASSED [100%]
+
+============================== 8 passed in 10.39s ==============================

@@ -1,0 +1,2 @@
+[OK] Integration 9: Prometheus is scraping api-gateway
+[OK] Integration 10: LangSmith has 9+ trace(s)

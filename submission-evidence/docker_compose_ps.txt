@@ -1,0 +1,13 @@
+time="2026-05-18T16:52:24+07:00" level=warning msg="/Users/bean/Day28-Lab-Assignment/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+NAME                                    STATUS          PORTS
+day28-lab-assignment-api-gateway-1      Up 10 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+day28-lab-assignment-embed-service-1    Up 2 minutes    0.0.0.0:8002->8002/tcp, [::]:8002->8002/tcp
+day28-lab-assignment-grafana-1          Up 10 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+day28-lab-assignment-kafka-1            Up 10 minutes   0.0.0.0:9092->9092/tcp, [::]:9092->9092/tcp
+day28-lab-assignment-mock-vllm-1        Up 10 minutes   0.0.0.0:8001->8001/tcp, [::]:8001->8001/tcp
+day28-lab-assignment-prefect-orion-1    Up 10 minutes   0.0.0.0:4200->4200/tcp, [::]:4200->4200/tcp
+day28-lab-assignment-prefect-worker-1   Up 9 minutes    
+day28-lab-assignment-prometheus-1       Up 10 minutes   0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp
+day28-lab-assignment-qdrant-1           Up 10 minutes   0.0.0.0:6333->6333/tcp, [::]:6333->6333/tcp
+day28-lab-assignment-redis-1            Up 10 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp
+day28-lab-assignment-zookeeper-1        Up 10 minutes   0.0.0.0:2181->2181/tcp, [::]:2181->2181/tcp
